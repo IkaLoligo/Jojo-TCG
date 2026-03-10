@@ -1,0 +1,60 @@
+main {
+    min-height: 100vh;
+}
+body {
+   /*Allignment*/     
+    min-width: 80vw;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#jijiBubble {
+    
+   /*Allignment*/ 
+    padding: 5% 5% 5% 5%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*Style*/
+    background-color: #F8d39c;
+    width: clamp(150px, 75%, 350px);;
+
+}
+
+#jijiImage {
+    width: clamp(100px, 100%, 300px);
+    height: auto;
+    align-self: center;
+}
+
+#labelBubble {
+   /*Allignment*/
+    width: clamp(100px, 100%, 300px); 
+    align-self: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*Style*/
+    background-color: white;
+}
+
+#summonPipi {
+   /*Allignment*/
+    width: clamp(100px, 100%, 300px);
+    height: auto;
+    align-self: center;
+     
+}
+
+#name {
+    width: clamp(100px, 100%, 300px);
+    height: auto;
+    align-self: center;
+    text-align: center;
+    background-color: white;
+}

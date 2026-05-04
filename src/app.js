@@ -18,6 +18,7 @@ Non AI sources
 
 */
 
+
 document.getElementById('summonPipi').addEventListener("click", function summonRandomJiji() {
         //genereer random nummer tussen 0 en 42
         //ga met dat nummer opzoek naar het object in jijiSummoned
@@ -329,3 +330,16 @@ document.getElementById('summonPipi').addEventListener("click", function summonR
 }
 );
 
+//See if the browser supports Service Workers, if so try to register one
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("service-worker.js").then(function(registering){
+    // Registration was successful
+    console.log("Browser: Service Worker registration is successful with the scope",registering.scope);
+  }).catch(function(error){
+    //The registration of the service worker failed
+    console.log("Browser: Service Worker registration failed with the error",error);
+  });
+} else {
+  //The registration of the service worker failed
+  console.log("Browser: I don't support Service Workers :(");
+}
